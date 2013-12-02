@@ -1,0 +1,46 @@
+h1 /* selector */ {
+	 property1: value1;
+}
+
+/* 1em= 16px */
+
+p {
+	color:red;
+	color:green;
+}
+
+p {
+	color:blue /* this applies because closer towards bottom */
+}
+
+body {
+	font-size:100%;
+	font-family:"Helvetica Neue", Helvetica, Arial, Verdana, sans-serif;
+}
+
+p {
+	text-align:center	
+{
+
+h1 {
+	text-shadow: 0px 0px 15px red, -10px 0 10px #000;
+	/* use ts sparingly */
+{
+
+h2 {
+	/*  */
+	color:rgb (198,35,35,.5);
+}
+
+* {
+	border:1px solid red;
+}
+
+/* pseudo-type
+	a:link {color:red}
+	a:visited {color:blue}
+	a:hover {color:purple}
+	a:active {color:green}
+	a:focus   */
+	
+img {float:right;}

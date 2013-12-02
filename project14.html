@@ -1,0 +1,87 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Project 14</title>
+  <style>
+    html {margin:1em; font-family:Helvetica, Arial, sans-serif;}
+    h2 {clear:both;}
+    .box {width:200px; height:200px; border:1px solid #000; background-color:#ddd;}
+  </style>
+</head>
+<body>
+  <header><h1>Project 14</h1></header>
+
+  <h2>Source and Target</h2>
+  <h3>Source</h3>
+  <input type="text" id="text1" placeholder="Type here">
+  <h3>Target</h3>
+  <input type="text" id="text2" readonly="true" placeholder="Echo the result here">
+  <script>
+
+document.getElementById('text1').addEventListener('keyup', function(){
+	var source = document.getElementById('text1').value;
+	document.getElementById('text2').value = source;
+});
+  </script>
+
+  <hr>
+
+  <h2>Image Swap</h2>
+  <img id="kitten" src="http://placekitten.com/g/300/200" title="A kitten" alt="A kitten"><br>
+  <input type="text" id="get-img" placeholder="Enter image url here"><button id="update-img">Update</button>
+  <script>
+		var picture = document.getElementById('update-img').addEventListener("click", function(){
+     var textbox = document.getElementById('get-img').value;  
+    kitten.setAttribute("src", textbox);
+     });
+  </script>
+
+  <hr>
+
+  <h2>Font Sizer</h2>
+  <p id="to-style">This is my paragraph of stuff.</p><br>
+  <input type="text" id="font-size" placeholder="Enter a font size"><button id="font-button">Make it so</button>
+  
+  <script>
+		document.getElementById('font-button').addEventListener("click", function(){
+ 		var newFont = document.getElementById('font-size').value;
+   		var font = document.getElementById('to-style');
+   		font.style.fontSize = newFont;
+
+  });
+  </script>
+
+  <hr>
+
+  <h2>Attribute Reporter</h2>
+  <img id="kitten2" src="http://placekitten.com/g/300/200" title="A kitten" alt="A kitten"><br>
+  <button id="get-attr">Log Attributes</button>
+  <script>
+	document.getElementById('get-attr').addEventListener("click", function(){
+	var box = document.getElementById('kitten2')
+  			 console.log(box.getAttribute('src'));
+  			 console.log(box.getAttribute('alt'));
+  			});
+  			
+  </script>
+
+  <hr>
+
+  <h2>Element Counter</h2>
+  <input type="text" id="element-type" placeholder="Which element?"><br>
+  <button id="count">Count the Elements</button>
+  <input type="text" id="element-count" placeholder="Results here" readonly="true">
+  <script>
+
+	 document.getElementById('count').addEventListener("click", function(){
+    var counter = document.querySelectorAll(document.getEjjjjlementById('element-type').value);
+     document.getElementById('element-count').value = counter.length;
+  });
+
+  </script>
+
+
+</body>
+</html>

@@ -1,0 +1,20 @@
+@viewport {width:device-width; zoom:1;}
+
+
+
+body {margin:1em;}
+img {max-width:100%;}
+
+
+
+@media only screen and (min-width:400px) {
+	.nav {float:left; width:40%;}
+	main {float:right;width:60%;}
+}
+
+@media only screen and (min-width:800px)  {
+	 img {float:right;
+	 padding:1%;
+	 max-width:40%;
+	 margin:0 0 1em 2em;}
+}

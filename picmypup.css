@@ -1,0 +1,79 @@
+@media only screen and (max-width:400px) {
+
+body {background:#66B2FF}
+
+	img {
+	max-width:50%;
+	max-height:100%;
+	}
+
+#sandy{
+position:absolute;
+left:-1px;
+top:100px;
+padding:2px;
+}
+#doug{
+position:absolute;
+left:158px;
+top:100px;
+padding:2px;
+font:3em;
+}
+i {color:white}
+#or{
+position:absolute;
+left:148px;
+top:165px;
+padding:2px;
+}
+
+img.resize{
+    width:150px; /* you can use % */
+    height: auto;}
+    
+	#sandy{float:left;width:100%;}
+	#doug{float:right;width:100%;}
+	
+div {
+	font:.8em;
+	border: 1px solid black;
+}	
+	#home
+{
+position:absolute;
+left:0px;
+top:328px;
+padding:2px;
+}
+#topdogs
+{
+position:absolute;
+left:46px;
+top:328px;
+padding:2px;
+}
+#viewmypuppy
+{
+position:absolute;
+left:117px;
+top:328px;
+padding:2px;
+}
+#underdogs
+{
+position:absolute;
+left:191px;
+top:328px;
+padding:2px;
+}
+#friends
+{
+position:absolute;
+left:268px;
+top:328px;
+padding:2px;
+}
+
+
+}
